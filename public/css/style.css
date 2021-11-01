@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+nav {
+  height: 10%;
+}
+
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-form {
+  width: 80%;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
