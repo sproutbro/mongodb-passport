@@ -51,6 +51,9 @@ router.post("/login", (req, res, next) => {
     if(!user) { return res.json(info)}
     req.logIn(user, (err) => {
       if(err) { return next(err) }
+      if(req.body.remember){
+        req.session.cookie.maxAge = 30 * 24 * 60 * 60 * 1000
+      }
       return res.json(user)
     })
   })(req, res, next)
