@@ -7,24 +7,83 @@
 html,
 body {
   height: 100%;
+  font-family: 'Inconsolata', monospace;
 }
 
 .container {
-  max-width: 1200px;
   height: 100%;
-  margin: auto;
 }
 
 nav {
-  height: 10%;
+  height: 3%;
+  background-color: #3C3C3C;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 18px;
+}
+
+nav a {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.sub-nav {
+  height: 6%;
+  background-color: #252526;
+}
+
+.sub-nav ul {
+  display: flex;
   height: 100%;
   list-style: none;
+  color: #8F9696;
+  font-size: 14px;
+}
+
+.sub-nav li {
+  width: 145px;
+  background-color: #2D2D2D;
   display: flex;
-  justify-content: space-around;
+  height: 100%;
   align-items: center;
+  justify-content: center;
+}
+
+.sub-nav li:hover{
+  cursor: pointer;
+  background-color: #1E1E1E;
+  color: #E2C075;
+}
+
+.user-ul {
+  height: 91%;
+  padding-left: 50px;
+  background-color: #1E1E1E;
+}
+
+.user-ul li{
+  color: #9CDCF0;
+}
+
+.user-ul li:hover{
+  cursor: pointer;
+  color: #D7BA7D;
+}
+.user-ul a{
+  cursor: pointer;
+  color: #81C3A8;
+}
+.user-ul a:hover{
+  cursor: pointer;
+  color: white;
 }
 
 .sign-form {

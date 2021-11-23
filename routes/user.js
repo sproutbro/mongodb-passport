@@ -25,10 +25,10 @@ passport.use(new LocalStrategy(
     User.findOne({ username: username }, (err, user) => {
       if(err) { return done(err) }
       if(!user) { 
-        return done(null, false, { message: "존재하지 않는 아이디"})
+        return done(null, false, { message: "존재하지 않는 아이디입니다."})
       }
       if(!bcrypt.compareSync(password, user.password)) {
-        return done(null, false, { message: "비번확인"})
+        return done(null, false, { message: "비밀번호가 일치하지 않습니다."})
       }
       return done(null, user)
     })

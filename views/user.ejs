@@ -5,21 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+		@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+	</style>
   <title>User page</title>
 </head>
 <body>
   <div class="container">
     <nav>
       <ul>
-        <li><a href="/">게시판</a></li>
-        <li><a href="/user">회원기능</a></li>
+        <li><a href="/">Board</a></li>
+        <li><a href="/user">User</a></li>
       </ul>
     </nav>
-    <ul>
+    <div class="sub-nav">
+      <ul>
+        <li>Test1</li>
+        <li>Test2</li>
+      </ul>
+    </div>
+    <ol class="user-ul">
+      <li data-id="write">
+        < 1 > Write
+      </li>
       <li>
         <a href="/user/logout">Logout</a>
       </li>
-    </ul>
+    </ol>
   </div>
   <script src="/js/user.js"></script>
 </body>
